@@ -1,0 +1,57 @@
+:root{
+    --dark-color:#f6f4f4;
+    --hover--:#bc005b;
+    --section-color:#f3dce7;
+}
+body{
+    font-family: 'Poppins','sans-serif';
+    height: 10000px;
+
+}
+.navbar-brand{
+    color: rgb(0, 0, 0);
+}
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link{
+    font-family: 'Golos-Text';
+    color: rgb(0 0 0 / 75%);
+}
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+color: var(--hover--);
+}
+.navbar .search{
+    border-left: 1px solid black;
+}
+.navbar .search svg{
+    color: rgb(0 0 0 / 50%);
+    cursor: pointer;
+    margin-left: 23px;
+}
+.navbar .navbar-toggler{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    border-color: rgb(0, 0, 0);
+}
+.shipping{
+    background-color: white;
+    border-top: 3px solid rgb(217, 214, 214);
+    border-bottom:3px solid rgb(217, 214, 214); ;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.shipping p {
+    font-size: 13px;
+    font-family: 'Golos-Text';
+    color: rgb(0 0 0 / 75%);
+}
+.shipping a {
+    font-size: 13px;
+    font-family: 'Golos-Text';
+    color: rgb(0 0 0 / 75%);
+}
+
+

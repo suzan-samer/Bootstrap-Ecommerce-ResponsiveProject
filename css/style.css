@@ -1,0 +1,386 @@
+body {
+  font-family: "Poppins", "sans-serif";
+}
+
+.navbar {
+  background-color: #f6f4f4;
+}
+.navbar .navbar-nav .nav-link {
+  font-family: "Golos-Text";
+  color: rgba(0, 0, 0, 0.75);
+}
+.navbar .navbar-nav .nav-link :focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: #e18043;
+}
+.navbar .search {
+  border-left: 1px solid black;
+}
+.navbar .search svg {
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin-left: 23px;
+}
+.navbar .navbar-toggler {
+  color: black;
+  font-size: 25px;
+  border-color: rgb(0, 0, 0);
+}
+
+.navbar-brand {
+  color: black;
+}
+
+.shipping {
+  background-color: white;
+  border-top: 3px solid rgb(217, 214, 214);
+  border-bottom: 3px solid rgb(217, 214, 214);
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+.shipping p {
+  font-size: 13px;
+  font-family: "Golos-Text";
+  color: rgba(0, 0, 0, 0.75);
+}
+.shipping a {
+  font-size: 13px;
+  font-family: "Golos-Text";
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.sections a {
+  text-decoration: none;
+  color: black;
+  font-family: "Golos-Text";
+}
+.sections a:hover {
+  color: #e18043;
+}
+
+.DressSec .btnn {
+  height: 26px;
+  width: 26px;
+  border-width: 1px;
+  border-radius: 50%;
+}
+.DressSec li {
+  font-family: "Golos-Text";
+  font-size: 13px;
+}
+.DressSec .box .maintitle {
+  font-family: "Golos-Text";
+  font-size: 28px;
+  text-align: center;
+}
+.DressSec p {
+  font-family: "Golos-Text";
+  text-align: center;
+}
+.DressSec p a {
+  color: black;
+}
+.DressSec p a:hover {
+  color: #e18043;
+}
+
+.product-inner-box .icons {
+  margin-top: 45px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  top: -3%;
+  transition: all 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+.product-inner-box .icons a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.product-inner-box .icons :hover {
+  color: #e18043;
+  font-size: 25px;
+}
+.product-inner-box img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product-inner-box .sale .badge {
+  background-color: rgba(223, 139, 101, 0.826);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-family: "Golos-Text";
+  padding: 10px 19px;
+  border-width: 20% 20% 20% 0;
+  top: 50px;
+  position: absolute;
+}
+.product-inner-box .sale .badge::before {
+  border-width: 10px 0px 0px 10px;
+  border-color: transparent transparent transparent rgba(224, 126, 81, 0.826);
+  content: "";
+  position: absolute;
+  right: -8px;
+  width: 0;
+  bottom: 0;
+  border-style: solid;
+}
+.product-inner-box .sale .badge::after {
+  border-width: 10px 8px 0px 10px;
+  border-color: rgba(224, 126, 81, 0.826) transparent transparent;
+  content: "";
+  position: absolute;
+  right: -8px;
+  width: 0;
+  top: 0;
+  border-style: solid;
+}
+
+.product-box.is-hover .icons {
+  transform: rotateY(-3%);
+  top: 3%;
+  opacity: 1;
+}
+
+.product-info .product-name h3 {
+  color: black;
+  font-size: 17px;
+  font-family: "Golos-Text";
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.product-info .product-nam h3 {
+  color: #e18043;
+  font-size: 13px;
+  font-family: "Golos-Text";
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.product-info .product-price {
+  color: black;
+  font-size: 17px;
+  font-family: "Golos-Text";
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.product-info .product-colors {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-info .product-colors .sc-item input {
+  position: absolute;
+  visibility: hidden;
+}
+.product-info .product-colors .sc-item .pink, .product-info .product-colors .sc-item .blue, .product-info .product-colors .sc-item .black, .product-info .product-colors .sc-item .red {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #ebebeb;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.product-info .product-colors .sc-item .red {
+  background-color: rgb(255, 0, 0);
+}
+.product-info .product-colors .sc-item .black {
+  background-color: rgb(0, 0, 0);
+}
+.product-info .product-colors .sc-item .blue {
+  background-color: rgb(64, 126, 218);
+}
+.product-info .product-colors .sc-item .pink {
+  background-color: rgb(224, 118, 178);
+}
+
+.Dress p {
+  font-family: "Golos-Text";
+  text-align: center;
+}
+.Dress p a {
+  color: black;
+}
+.Dress p a:hover {
+  color: #e18043;
+}
+.Dress .btnnn {
+  margin-left: 50px;
+  height: 50%;
+  width: 50%;
+  border-width: 1px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  font-family: "Golos-Text";
+}
+.Dress .btnnn:hover {
+  background-color: rgb(215, 195, 170);
+}
+
+.shippingg {
+  background-color: white;
+  border-top: 3px solid rgb(217, 214, 214);
+  padding-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.shippingg p {
+  font-size: 17px;
+  font-family: "Golos-Text";
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.social {
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+.social p {
+  font-size: 18px;
+  font-family: "Golos-Text";
+  color: black;
+}
+
+footer {
+  background-color: rgb(247, 245, 245);
+  font-family: "Golos-Text";
+  color: black;
+  align-items: center;
+  justify-content: center;
+  padding-left: 80px;
+}
+footer .copy-white {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.socia {
+  background-color: rgb(247, 245, 245);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 280px;
+}
+.socia p {
+  font-size: 14px;
+  font-family: "Golos-Text";
+  color: black;
+}
+
+#filter-widget {
+  padding: 5px 15px 0;
+}
+#filter-widget section:not(#fw_header) {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee;
+}
+#filter-widget #fw_header {
+  padding-top: 25px;
+  padding-bottom: 0;
+}
+#filter-widget #fw-title {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: -15px;
+  font-family: "Golos-Text";
+}
+#filter-widget .heading {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Golos-Text";
+}
+#filter-widget #fw-type ul {
+  padding: 0;
+  display: block;
+  margin-top: 15px;
+  font-family: "Golos-Text";
+}
+#filter-widget #fw-type ul li {
+  list-style: none;
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Golos-Text";
+}
+#filter-widget #fw-type .text-right {
+  float: left;
+  height: 13px;
+  width: 13px;
+  border: 1px solid #999;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+#filter-widget #fw-type li.active span:first-child {
+  color: rgba(224, 126, 81, 0.826);
+}
+#filter-widget #fw-type li.active span:last-child {
+  background: rgba(224, 126, 81, 0.826);
+  color: #fff;
+  border: 1px solid rgba(224, 126, 81, 0.826);
+  font-size: 10px;
+  line-height: 100%;
+  text-align: center;
+}
+#filter-widget #fw-color ul {
+  padding: 0;
+  display: block;
+  margin-top: 15px;
+}
+#filter-widget #fw-color ul li {
+  list-style: none;
+  margin-bottom: 18px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.botton {
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+.botton button {
+  width: 100%;
+  font-family: "Golos-Text";
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.Dress .box button {
+  width: 100%;
+  font-family: "Golos-Text";
+  background-color: #fff;
+  border: 1px solid black;
+  align-items: center;
+}
+
+.submenu-wrap {
+  position: absolute;
+  top: 10%;
+  right: -30%;
+  z-index: 1;
+  display: none;
+  width: 60%;
+}
+.submenu-wrap .sub-menu {
+  background-color: rgb(255, 255, 255);
+}/*# sourceMappingURL=style.css.map */

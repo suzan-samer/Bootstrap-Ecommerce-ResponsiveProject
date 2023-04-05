@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="e.commerce store for clothies">
+  <meta name="keywords" content="OnnlineStore">
+  <meta name="author" content="suzan">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Golos+Text&family=Indie+Flower&family=Mada:wght@500&family=Poppins:wght@800&family=Roboto+Slab:wght@800&family=Roboto:ital,wght@0,500;0,900;1,400;1,500&family=Shantell+Sans:wght@700&display=swap"
+    rel="stylesheet">
+  <title>MONAKO CLUB</title>
+</head>
+
+<body>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+        <a class="navbar-brand " href="#">
+          CLUB MONACO
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+          aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#">NEW ARRIVALS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">WOMEN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#"> MEN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">SALE </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#"> FEATURES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#"> HOLIDAY SHOPS</a>
+            </li>
+          </ul>
+          <div class="search ps-3 pe-3  d-lg-block  ">
+            <i class="fa-regular fa-heart "></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="shipping pt-3 texe-center ">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 ">
+          <p>FREE SHIPPING ON ARDERS OF 150$ OR MORE WITH CODE <b>FREE SHIP</b> <a href="#">.See Details</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sections pt-3  ">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 ">
+          <a href="#">Women /</a>
+          <a href="#">Clothing /</a>
+          <a href="#" style="color: rgb(209, 206, 206);">Dresses </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="DressSec pt-3 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4  d-none d-lg-block  ">
+          <ul class="list-unstyled d-flex  mt-2 mb-2">
+            <button onclick="hideShow()" class="btnn"><i class="fa-solid fa-bars"></i></button>
+            <li id="FilterTitle" class="ms-2 mt-1"> HIDE FILTERS</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4  ">
+          <div class="box">
+            <h1 class="maintitle">DRESSES</h1>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
+          <p> 1-30 of 99 items <a href="#" class="ms-3 me-4"> View All </a> Newest <i
+              class="fa-solid fa-caret-down ms-4"></i> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="botton pt-3 texe-center  ">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4   d-md-block d-lg-none d-sm-none">
+          <button onclick="hideShow()" type="button" class="btn ">REFINE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="subMenu" class="submenu-wrap   ">
+    <div class="sub-menu">
+      <div class="refine-info">
+        <div class="col-sm-6 col-md-6 col-lg-3 d-lg-none d-md-block d-sm-block   mb-4">
+          <div class="container-fluid">
+            <div class="row" id="filter-widget">
+              <section class="col-12">
+                <span class="heading">
+                  <i class="fa-solid fa-xmark"></i>
+                </span>
+              </section>
+              <section id="fw-type">
+                <span class="heading">
+                  TYPE :
+                </span>
+                <div class="contents">
+                  <ul>
+                    <li>
+                      <span><b>MAXI</b> (19)</span>
+                      <span class="text-right"></span>
+                    </li>
+                    <li class="active">
+                      <span><b>MIDI</b> (9)</span>
+                      <span class="text-right">
+                        <i class="fa fa-check"></i>
+                      </span>
+                    </li>
+                    <li>
+                      <span><b>MINI</b> (19)</span>
+                      <span class="text-right"></span>
+                    </li>
+                    <li>
+                      <span><b>ROMPER</b> (9)</span>
+                      <span class="text-right"></span>
+                    </li>
+                    <li>
+                      <span><b>JUMPSUIT</b> (10)</span>
+                      <span class="text-right"></span>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="col-12">
+                <span class="heading">
+                  SIZE :
+                </span>
+              </section>
+              <section class="col-12">
+                <span class="heading">
+                  PRICE :
+                </span>
+              </section>
+              <section class="col-12" id="fw-color">
+                <span class="heading">
+                  COLOR :
+                </span>
+                <div class="contents">
+                  <ul>
+                    <li>
+                      <span>
+                        <i class="fa-solid fa-circle" style="color: #fe4c50;"></i>
+                        <i class="fa-solid fa-circle" style="color: #15e1de;"></i>
+                        <i class="fa-solid fa-circle" style="color: #000000;"></i>
+                        <i class="fa-solid fa-circle" style="color: #d1fe4c;"></i>
+                        <i class="fa-solid fa-circle" style="color: #8c63be;"></i>
+                        <i class="fa-solid fa-circle" style="color: #3353d3;"></i>
+                        <i class="fa-solid fa-circle" style="color: #7e1544;"></i>
+                        <i class="fa-solid fa-circle" style="color: #371c58;"></i>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <i class="fa-solid fa-circle" style="color: #ae9091;"></i>
+                        <i class="fa-solid fa-circle" style="color: #032a29;"></i>
+                        <i class="fa-solid fa-circle" style="color: #d08c8c;"></i>
+                        <i class="fa-solid fa-circle" style="color: #f8df00;"></i>
+                        <i class="fa-solid fa-circle" style="color: #aa0d1f;"></i>
+                        <i class="fa-solid fa-circle" style="color: #3053dc;"></i>
+                        <i class="fa-solid fa-circle" style="color: #a76683;"></i>
+                        <i class="fa-solid fa-circle" style="color: #7c6d8e;"></i>
+                      </span>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="productsSec">
+    <div class="container">
+      <div id="suz" class="row">
+        <div id="mainFilter" class="col-sm-6 col-md-6 col-lg-3 d-lg-block d-md-none d-sm-none   mb-4">
+          <div class="container-fluid">
+            <div class="row" id="filter-widget">
+              <section id="fw-type">
+                <span class="heading">
+                  TYPE : <i class="fa-solid fa-minus "></i>
+                </span>
+                <div class="contents">
+                  <ul>
+                    <li>
+                      <span><b>MAXI</b> (19)</span>
+                      <span class="text-right"></span>
+                    </li>
+                    <li class="active">
+                      <span><b>MIDI</b> (9)</span>
+                      <span class="text-right">
+                        <i class="fa fa-check"></i>
+                      </span>
+                    </li>
+                    <li>
+                      <span><b>MINI</b> (19)</span>
+                      <span class="text-right"></span>
+                    </li>
+                    <li>
+                      <span><b>ROMPER</b> (9)</span>
+                      <span class="text-right"></span>
+                    </li>
+                    <li>
+                      <span><b>JUMPSUIT</b> (10)</span>
+                      <span class="text-right"></span>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="col-12">
+                <span class="heading">
+                  SIZE :
+                </span>
+              </section>
+              <section class="col-12" id="fw-color">
+                <span class="heading">
+                  COLOR :
+                </span>
+                <div class="contents">
+                  <ul>
+                    <li>
+                      <span>
+                        <i class="fa-solid fa-circle" style="color: #fe4c50;"></i>
+                        <i class="fa-solid fa-circle" style="color: #15e1de;"></i>
+                        <i class="fa-solid fa-circle" style="color: #000000;"></i>
+                        <i class="fa-solid fa-circle" style="color: #d1fe4c;"></i>
+                        <i class="fa-solid fa-circle" style="color: #8c63be;"></i>
+                        <i class="fa-solid fa-circle" style="color: #3353d3;"></i>
+                        <i class="fa-solid fa-circle" style="color: #7e1544;"></i>
+                        <i class="fa-solid fa-circle" style="color: #371c58;"></i>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <i class="fa-solid fa-circle" style="color: #ae9091;"></i>
+                        <i class="fa-solid fa-circle" style="color: #032a29;"></i>
+                        <i class="fa-solid fa-circle" style="color: #d08c8c;"></i>
+                        <i class="fa-solid fa-circle" style="color: #f8df00;"></i>
+                        <i class="fa-solid fa-circle" style="color: #aa0d1f;"></i>
+                        <i class="fa-solid fa-circle" style="color: #3053dc;"></i>
+                        <i class="fa-solid fa-circle" style="color: #a76683;"></i>
+                        <i class="fa-solid fa-circle" style="color: #7c6d8e;"></i>
+                      </span>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div id="soz" class=" col-12 col-sm-6 col-md-6 col-lg-3  mb-4">
+          <div class="product-box">
+            <div class="product-inner-box position-relative">
+              <div class="icons position-absolute">
+                <a href="" class="text-decoration-none text-dark ">
+                  <i class="fa-regular fa-heart "></i>
+                </a>
+                <a href="" class="text-decoration-none text-dark">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+              </div>
+              <!-- <div class="sale position-absolute top-0 start-0">
+                           <span class="badge ">EXTRA 25% OFF</span>
+                           </div> -->
+              <img class="mt-5" src="images/style1.png" onmouseover="this.src=`./images/style2.png`;"
+                onmouseout="this.src=`images/style1.png`;" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-nam mt-2 texe-center">
+                <h3> NEW</h3>
+              </div>
+              <div class="product-name mt-2">
+                <h3 id="name">Striped Dress</h3>
+              </div>
+              <div class="product-price">
+                $<span id="price">40.00</span>
+              </div>
+              <div class="product-colors mt-3">
+                <div class="sc-item ">
+                  <label class="red" style="background-color: rgb(172, 172, 172);"></label>
+                  <label class="black" style="background-color: rgb(0, 0, 0);"></label>
+                  <label class="blue" style="background-color: rgb(234, 255, 1);"></label>
+                  <label class="blue" style="background-color: rgb(233, 5, 130);"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="so" class=" col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+          <div class="product-box">
+            <div class="product-inner-box position-relative">
+              <div class="icons position-absolute">
+                <a href="" class="text-decoration-none text-dark ">
+                  <i class="fa-regular fa-heart "></i>
+                </a>
+                <a href="" class="text-decoration-none text-dark">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+              </div>
+              <!-- <div class="sale position-absolute top-0 start-0">
+                           <span class="badge ">EXTRA 25% OFF</span>
+                           </div> -->
+              <img class="mt-5" src="images/style11.png" onmouseover="this.src=`./images/style22.png`;"
+                onmouseout="this.src=`images/style11.png`;" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-nam mt-2 texe-center">
+                <h3> NEW</h3>
+              </div>
+              <div class="product-name mt-2">
+                <h3 id="name">Striped Dress</h3>
+              </div>
+              <div class="product-price">
+                $<span id="price">40.00</span>
+              </div>
+              <div class="product-colors mt-3">
+                <div class="sc-item ">
+                  <label class="red" style="background-color: rgb(11, 107, 75);"></label>
+                  <label class="black" style="background-color: rgb(212, 144, 26);"></label>
+                  <label class="blue" style="background-color: rgb(111, 66, 165);"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="s" class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+          <div class="product-box">
+            <div class="product-inner-box position-relative">
+              <div class="icons position-absolute">
+                <a href="" class="text-decoration-none text-dark ">
+                  <i class="fa-regular fa-heart "></i>
+                </a>
+                <a href="" class="text-decoration-none text-dark">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+              </div>
+              <div class="sale position-absolute top-0 start-0">
+                <span class="badge ">EXTRA 25% OFF</span>
+              </div>
+              <img class="mt-5" src="images/style111.png" onmouseover="this.src=`./images/style222.png`;"
+                onmouseout="this.src=`images/style111.png`;" alt="">
+              <!-- <div class="cart-btn ">
+                           <button class=" btn main-btn shadow-sm rounded-pill" > <i class="fa-solid fa-cart-shopping"></i> إضافه إلى سلة الشراء </button>
+                           </div> -->
+            </div>
+            <div class="product-info">
+              <div class="product-nam mt-2 texe-center">
+                <h3> NEW</h3>
+              </div>
+              <div class="product-name mt-2">
+                <h3 id="name">Striped Bowee Tee</h3>
+              </div>
+              <div class="product-price">
+                $<span id="price">32.50</span>
+              </div>
+              <div class="product-colors mt-3">
+                <div class="sc-item ">
+                  <label class="red"></label>
+                  <label class="black"></label>
+                  <label class="blue"></label>
+                  <label class="pink"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--
+                  second row
+                  -->
+        <div id="sss" class=" so col-sm-6 col-md-6 col-lg-4   mb-4 d-none d-lg-block">
+          <div class="filter-widget">
+          </div>
+        </div>
+        <div id="four" class=" col-12 col-sm-6 col-md-6 col-lg-4  mb-4 ">
+          <div class="product-box">
+            <div class="product-inner-box position-relative">
+              <div class="icons position-absolute">
+                <a href="" class="text-decoration-none text-dark ">
+                  <i class="fa-regular fa-heart "></i>
+                </a>
+                <a href="" class="text-decoration-none text-dark">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+              </div>
+              <div class="sale position-absolute top-0 start-0">
+                <span class="badge ">EXTRA 50% OFF</span>
+              </div>
+              <img class="mt-5" src="images/st11.png" onmouseover="this.src=`./images/st22.png`;"
+                onmouseout="this.src=`images/st11.png`;" alt="">
+              <!-- <div class="cart-btn ">
+                           <button class=" btn main-btn shadow-sm rounded-pill" > <i class="fa-solid fa-cart-shopping"></i> إضافه إلى سلة الشراء </button>
+                           </div> -->
+            </div>
+            <div class="product-info">
+              <div class="product-nam mt-2 texe-center">
+                <h3> NEW</h3>
+              </div>
+              <div class="product-name mt-2">
+                <h3 id="name">Striped Bowee Tee</h3>
+              </div>
+              <div class="product-price">
+                $<span id="price">50.50</span>
+              </div>
+              <div class="product-colors mt-3">
+                <div class="sc-item ">
+                  <label class="red" style="background-color: #fe4c50;"></label>
+                  <label class="black" style="background-color: bisque;"></label>
+                  <label class="blue"></label>
+                  <label class="pink"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="five" class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 ">
+          <div class="product-box">
+            <div class="product-inner-box position-relative">
+              <div class="icons position-absolute">
+                <a href="" class="text-decoration-none text-dark ">
+                  <i class="fa-regular fa-heart "></i>
+                </a>
+                <a href="" class="text-decoration-none text-dark">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+              </div>
+              <div class="our-section" data-work="5">
+                <img class=" mt-5" src="images/st1.png" onmouseover="this.src=`./images/st2.png`;"
+                  onmouseout="this.src=`images/st1.png`;" alt="">
+              </div>
+              <!-- <div class="cart-btn ">
+                           <button class=" btn main-btn shadow-sm rounded-pill" > <i class="fa-solid fa-cart-shopping"></i> إضافه إلى سلة الشراء </button>
+                           </div> -->
+            </div>
+            <div class="product-info">
+              <div class="product-name mt-2">
+                <h3 id="name">SHOP THE COLLECTION</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--
+                  third row
+                  -->
+        <div id="ssss" class="col-sm-6 col-md-6 col-lg-3   mb-4 d-none d-lg-block">
+          <div class="filter-widget">
+          </div>
+        </div>
+        <div id="first" class="col-12 col-sm-6 col-md-6 col-lg-3  mb-4">
+          <div class="product-box">
+            <div class="product-inner-box position-relative">
+              <div class="icons position-absolute">
+                <a href="" class="text-decoration-none text-dark ">
+                  <i class="fa-regular fa-heart "></i>
+                </a>
+                <a href="" class="text-decoration-none text-dark">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+              </div>
+              <!-- <div class="sale position-absolute top-0 start-0">
+                           <span class="badge ">EXTRA 25% OFF</span>
+                           </div> -->
+              <img class="mt-5" src="images/st111.png" onmouseover="this.src=`./images/st222.png`;"
+                onmouseout="this.src=`images/st111.png`;" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-nam mt-2 texe-center">
+                <h3> NEW</h3>
+              </div>
+              <div class="product-name mt-2">
+                <h3 id="name">Striped Dress</h3>
+              </div>
+              <div class="product-price">
+                $<span id="price">40.00</span>
+              </div>
+              <div class="product-colors mt-3">
+                <div class="sc-item ">
+                  <label class="red" style="background-color: rgb(172, 172, 172);"></label>
+                  <label class="black" style="background-color: rgb(0, 0, 0);"></label>
+                  <label class="blue" style="background-color: rgb(234, 255, 1);"></label>
+                  <label class="blue" style="background-color: rgb(233, 5, 130);"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="second" class="col-12 col-sm-6 col-md-6 col-lg-3  mb-4">
+          <div class="product-box">
+            <div class="product-inner-box position-relative">
+              <div class="icons position-absolute">
+                <a href="" class="text-decoration-none text-dark ">
+                  <i class="fa-regular fa-heart "></i>
+                </a>
+                <a href="" class="text-decoration-none text-dark">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+              </div>
+              <!-- <div class="sale position-absolute top-0 start-0">
+                           <span class="badge ">EXTRA 25% OFF</span>
+                           </div> -->
+              <img class="mt-5" src="images/st1111.png" onmouseover="this.src=`./images/st2222.png`;"
+                onmouseout="this.src=`images/st1111.png`;" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-nam mt-2 texe-center">
+                <h3> NEW</h3>
+              </div>
+              <div class="product-name mt-2">
+                <h3 id="name">Striped Dress</h3>
+              </div>
+              <div class="product-price">
+                $<span id="price">40.00</span>
+              </div>
+              <div class="product-colors mt-3">
+                <div class="sc-item ">
+                  <label class="red" style="background-color: rgb(11, 107, 75);"></label>
+                  <label class="black" style="background-color: rgb(212, 144, 26);"></label>
+                  <label class="blue" style="background-color: rgb(111, 66, 165);"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="third" class="col-12 col-sm-6 col-md-6 col-lg-3  mb-4">
+          <div class="product-box">
+            <div class="product-inner-box position-relative">
+              <div class="icons position-absolute">
+                <a href="" class="text-decoration-none text-dark ">
+                  <i class="fa-regular fa-heart "></i>
+                </a>
+                <a href="" class="text-decoration-none text-dark">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+              </div>
+              <div class="sale position-absolute top-0 start-0">
+                <span class="badge ">EXTRA 25% OFF</span>
+              </div>
+              <img class="mt-5" src="images/s.png" onmouseover="this.src=`./images/s2.png`;"
+                onmouseout="this.src=`images/s.png`;" alt="">
+            </div>
+            <div class="product-info">
+              <div class="product-nam mt-2 texe-center">
+                <h3> NEW</h3>
+              </div>
+              <div class="product-name mt-2">
+                <h3 id="name">Striped Bowee Tee</h3>
+              </div>
+              <div class="product-price">
+                $<span id="price">32.50</span>
+              </div>
+              <div class="product-colors mt-3">
+                <div class="sc-item ">
+                  <label class="red"></label>
+                  <label class="black"></label>
+                  <label class="blue"></label>
+                  <label class="pink"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Dress pt-5 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12  col-md-12 col-lg-6 ">
+          <p class=""> showing 1-30 of 99 items <a href="#" class=""> View All </a> </p>
+        </div>
+        <div class=" col-sm-12 col-md-12 col-lg-6  ">
+          <div class="box  ">
+            <button type="button" class="btn ">SHOW MORE PRODUCTS </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="shippingg mt-3  ">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 ">
+          <p> <b>Best Dresses</b> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore debitis eaque
+            dolores assumenda dolorem fugiat rem vero quibusdam, perferendis blanditiis vel quod exercitationem eius,
+            cum optio nemo sapiente, asperiores saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+            atque aperiam, aspernatur quisquam quas dolores voluptas perspiciatis exercitationem, eligendi aliquid dolor
+            excepturi, at reiciendis numquam commodi corporis. Consectetur, molestias maxime.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="social pt-3 texe-center ">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 ">
+          <p> #CLUB MONAKO
+            <i class="fa-brands fa-instagram ms-3"></i>
+            <i class="fa-brands fa-facebook-f ms-3"></i>
+            <i class="fa-brands fa-twitter ms-3"></i>
+            <i class="fa-brands fa-pinterest ms-3"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="py-4 mt-3  ">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3 mb-3 ">
+        <h5>SUPPORT</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Email Us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FQA</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Gift Cards</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tel-048757865</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Student Discount</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-3 ">
+        <h5>SHIPPING</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Track Your Order</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shipping Rotes</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Return & Exchanges</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Intenational Shipping</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Refer a Friend</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 mb-3 ">
+        <h5>ABOUT CLUP</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our-story</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Story-Locater</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Events</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Careers</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About Us</a></li>
+        </ul>
+      </div>
+      <div class=" col-12 col-md-6 col-lg-3 ">
+        <form>
+          <h5>LETS KEEP IN TOUCH</h5>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label class="visually-hidden">Email address</label>
+            <input type="text" class="form-control" placeholder="Enter Email address">
+            <button class="btn btn-dark" type="button">SUBMIT</button>
+          </div>
+          <p class="mt-3">Sign Up to recieve Emails on everything new , special offers and exclusive events</p>
+        </form>
+      </div>
+    </div>
+    <div class=" copy-white col-12 col-md-12 ">
+      <p>
+        CopyWrite CLUBMONAKO 2018 SiteMap Privacy Policy Terms& conditions United Status <i
+          class="fa-solid fa-spinner"></i>
+      </p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+
+</html>
